@@ -22,14 +22,6 @@ class ErohonsController < ApplicationController
     end
 
     render :pdf  => input_word, :layout => 'pdf', :encoding => 'UTF-8'
-
-    # respond_to do |format|
-    #   format.html
-    #   format.pdf do
-    #     render :pdf => input_word
-    #   end
-    # end
-
   end
 
 end
