@@ -1,0 +1,14 @@
+<div style="width:500;height:500;">
+  <h1><%= @input_word %></h1> 
+</div>  
+<table>
+  <% @img_urls.each_with_index do |img_url, i| %>
+    <% if 0 == (i % 2) %>
+      <tr>
+    <% end %>
+    <td><%= image_tag img_url %></td>
+    <% if 1 == (i % 2) %>
+      </tr>
+    <% end %>
+  <% end %>
+</table>

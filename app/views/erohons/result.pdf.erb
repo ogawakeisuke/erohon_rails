@@ -1,0 +1,13 @@
+  
+<h1 "style= width500;height=500;"><%= @input_word %></h1>
+<table>
+  <% @img_urls.each_with_index do |img_url, i| %>
+    <% if 0 == (i % 2) %>
+      <tr>
+    <% end %>
+    <td><%= wicked_pdf_image_tag img_url %></td>
+    <% if 1 == (i % 2) %>
+      </tr>
+    <% end %>
+  <% end %>
+</table>
