@@ -1,11 +1,11 @@
-<div style="width:1000px; height:1580px; margin:auto; top:50%; line-height:1100px;">
-  <center style="vertical-align:middle;">
-    <h1 style='font-family: "ＭＳ ゴシック",sans-serif; font-size: 150px; text-decoration: underline; '><%= @input_word %></h1> 
-  </center>
-  <%= image_tag "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzI9uwmZBVJWDH1m3W2sIiMScccTyAcKZRAaQsUYZQRpqkNCT-Xw", :size => "150x150" %>
+<div style="width:790px; height:1060px; margin:auto; position:relative;">
+  <div style="margin:550px auto 0 auto; width:100%;">
+    <h1 style='font-family: "ＭＳ ゴシック",sans-serif; font-size:120px; text-decoration:underline; align:left;'><%= @input_word %></h1> 
+  </div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzI9uwmZBVJWDH1m3W2sIiMScccTyAcKZRAaQsUYZQRpqkNCT-Xw" width=150 height=150 style="position:absolute; top:700px; left:0;" />
 </div>  
 
-<table width="1000px">
+<table width="790px">
   <% @img_urls.each_with_index do |img_url, i| %>
     <% if 0 == (i % 2) %>
       <tr>
